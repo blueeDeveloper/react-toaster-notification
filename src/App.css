@@ -1,0 +1,51 @@
+.toaster-container {
+  position: fixed;
+  top: .5rem;
+  right: 1rem;
+  
+}
+
+.div-container {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.success-btn {
+  padding: 10px 20px;
+  border-radius: 10px;
+  background-color: green;
+  border: 1px solid rgb(3, 60, 3);
+  color: white;
+}
+
+.success-btn:hover {
+  transform: translateY(-2px);
+  cursor: pointer;
+}
+
+.toast {
+  width: 200px;
+  position: relative;
+  margin: 10px;
+  background-color: green;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 10px;
+  animation: slidein 1s 1;
+  span {
+    position: absolute;
+    right: 0.5rem;
+    cursor: pointer;
+  }
+}
+
+@keyframes slidein {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
